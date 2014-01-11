@@ -13,3 +13,6 @@
 Session.vim
 .netrwhist
 *~
+
+# generated files
+ideas.js

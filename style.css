@@ -11,4 +11,8 @@
     height: 500px;
 }
 
-
+#feedback-list {
+    list-style-type: none;
+    width: 800px;
+    display: block;
+}
