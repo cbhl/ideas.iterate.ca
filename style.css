@@ -1,0 +1,14 @@
+.idea {
+    width: 800px;
+    margin: 10px auto;
+    display: block;
+}
+
+#idea-prompt {
+}
+
+#idea-textarea {
+    height: 500px;
+}
+
+
