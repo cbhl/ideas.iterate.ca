@@ -1,15 +1,36 @@
 <html>
 <head>
+<!-- title font -->
+<!-- STYLE -->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="css/fonts.css" rel="stylesheet">
 
+<!-- LIBS -->               
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <script src="ideas.js"></script>
 
 </head>
 <body>
-<div class="idea" id="idea-prompt">Describe your idea:</div>
-<textarea class="idea" id="idea-textarea"></textarea>
-<ul id="feedback-list"></ul>
+	<!-- WHERE USER ENTER THIER IDEA -->
+	<div class="main">
+		<div class="content">
+			<h1>Describe your idea:</h1>
+			<textarea class="idea" id="idea-textarea"></textarea>
+		</div>
+	</div>
+	<div class="keywords">
+		<div class="content">
+			<h3>Keywords</h3>
+			<ul id="feedback-list"></ul>
+		</div>
+	</div>
+	<div class="related-ideas">
+		<div class="content">
+			<h3>Related Ideas</h3>
+			<ul id="past-idea-list"></ul>
+		</div>	
+	</div>
 </body>
-</html>
