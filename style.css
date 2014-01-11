@@ -14,5 +14,12 @@
 #feedback-list {
     list-style-type: none;
     width: 800px;
+    margin: 10px auto;
     display: block;
 }
+
+.feedback-list-item {
+    display: none;
+}
+
+
