@@ -10,7 +10,7 @@ $(->
     add_feedback_item = (key, {keywords, message}) =>
         $item = $('<li class="feedback-list-item">')
         $item.attr('id', 'feedback-list-item-'+key)
-        $item.html('<strong>'+ key + '</strong> ' + message)
+        $item.html('<strong>'+ keywords[0] + '</strong> ' + message)
         $feedback_list.append($item)
         $idea_textarea.on "input propertychange", (e) =>
             idea_text = $idea_textarea.val()
