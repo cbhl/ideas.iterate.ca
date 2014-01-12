@@ -140,7 +140,11 @@ $(->
         if not idea_text?.length
             $feedback_list_status.text('Type out your idea, and we will tell you if it is "obviously bad".')
         else if visible_item_count == 0
-            $feedback_list_status.text('Your idea does not look "obviously bad" to us. Maybe you should go talk to some potential customers!')
+            # check if the user has entered more than 3 words:
+            if idea_text.split(" ").length > 3
+                $feedback_list_status.text('Your idea does not look "obviously bad" to us. Maybe you should go talk to some potential customers!')
+            else 
+                $feedback_list_status.text('Please enter more than 3 words. We cant assess your idea at the moment.')
         else if visible_item_count == 1
             $feedback_list_status.text('We found the following potential problem with your idea:')
         else
