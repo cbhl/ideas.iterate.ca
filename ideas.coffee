@@ -30,6 +30,6 @@ $(->
                 feedback_items[key].show()
             else
                 feedback_items[key].hide()
-        update_item_visbility key, visible for key, visible of key_status
+        update_item_visibility key, visible for key, visible of key_status
         return
 )
