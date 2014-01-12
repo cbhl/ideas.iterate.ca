@@ -141,6 +141,7 @@ $(->
             $feedback_list_status.text('Type out your idea, and we will tell you if it is "obviously bad".')
         else if visible_item_count == 0
             # check if the user has entered more than 3 words:
+            idea_text = idea_text.trim().replace(/\s+/g, " ");    #remove extra spaces
             if idea_text.split(" ").length > 3
                 $feedback_list_status.text('Your idea does not look "obviously bad" to us. Maybe you should go talk to some potential customers!')
             else 
