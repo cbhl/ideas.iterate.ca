@@ -19,7 +19,108 @@
 }
 
 .feedback-list-item {
-    display: none;
+    width: 90%;
+    /*display: none;*/
+}
+
+/* credits: flat-ui (which in turn is based off of bootstrap)
+ * http://designmodo.github.io/Flat-UI/ */
+
+.main {
+    width: 100%;
+    padding: 10px 0 15px 0;
+    height: auto;
+    overflow:hidden;
+    position: relative;
+    /* TODO(lc): find a better picture also credit tthe img? */
+    background-color: rgba(0, 0, 0, 0.05);
+    background-size: cover;
+}
+
+#idea-prompt {
+    font: 90px/100px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgba(52, 73, 94, 0.8);
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding-top: 5px;
+}
+
+#idea-textarea {
+    border: 2px solid #bdc3c7;
+    color: #34495e;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    height: 105px;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+#idea-textarea:focus {
+    border-color: #00b9ff;
+    box-shadow: none;
+    outline: 0 none;
 }
 
 
+@font-face {
+  font-family: 'Flat-UI-Icons';
+  src: url('thirdparty/flat-ui-fonts/Flat-UI-Icons.eot');
+  src: url('thirdparty/flat-ui-fonts/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'), url('thirdparty/flat-ui-fonts/Flat-UI-Icons.woff') format('woff'), url('thirdparty/flat-ui-fonts/Flat-UI-Icons.ttf') format('truetype'), url('thirdparty/flat-ui-fonts/Flat-UI-Icons.svg#Flat-UI-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-good,
+.icon-bad,
+.icon-neutral {
+  display: inline-block;
+  font-family: 'Flat-UI-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  display: table-cell;
+  padding-right: 5px;
+}
+.icon-good:before {
+  content: "\e00a";
+  color: #27AE60;
+}
+.icon-bad:before {
+  content: "\e00b";
+  color: #C0392B;
+}
+.icon-neutral:before {
+  content: "\e01c";
+  color: #F39C12;
+}
+
+.feedback-keyword {
+    color: #2C3E50;
+    font-weight: bold;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    width: 90px;
+    padding-top: 10px;
+    display: table-cell;
+}
+
+.feedback-message {
+    color: #34495E;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    display: table-cell;
+}

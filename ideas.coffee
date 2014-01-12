@@ -4,7 +4,13 @@ $(->
     feedback = {
         "grocery": {
             "keywords": ["grocery"],
+            "category": "neutral",
             "message": "The average grocery store has a profit margin of about 1 percent.",
+        },
+        "porn": {
+            "keywords": ["porn"],
+            "category": "bad",
+            "message": "something about credit card payment, if I recall correctly.",
         },
     }
 
@@ -44,10 +50,11 @@ $(->
 
 
 
-    add_feedback_item = (key, {keywords, message}) =>
-        $item = $('<li class="feedback-list-item">')
-        $item.attr('id', 'feedback-list-item-'+key)
+    add_feedback_item = (key, {keywords, category, message}) =>
+        $item = $("<li class='feedback-list-item'>")
+        $item.attr('id', "feedback-list-item-#{key}")
         $item.html(message)
+        $item.html("<span class='icon-#{category}'></span><span class='feedback-keyword'>#{key}</span><span class='feedback-message'>#{message}</span>")
         $feedback_list.append($item)
         $idea_textarea.on "input propertychange", (e) =>
             idea_text = $idea_textarea.val()
@@ -60,6 +67,7 @@ $(->
             else
                 $item.hide()
 
+    $idea_textarea.autosize {append: "\n"}
     add_feedback_item key, value for key, value of feedback
     
 )

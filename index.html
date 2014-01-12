@@ -5,11 +5,20 @@
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="ideas.js"></script>
+<script src="thirdparty/jquery.autosize.js"></script>
 
 </head>
 <body>
-<div class="idea" id="idea-prompt">Describe your idea:</div>
-<textarea class="idea" id="idea-textarea"></textarea>
-<ul id="feedback-list"></ul>
+<div class="main">
+    <div class="idea" id="idea-prompt">So you have an idea..</div>
+    <textarea class="idea" id="idea-textarea" placeholder="I want to make people feel bad for having bad ideas by creating a bad website that tells bad people how bad their ideas are." autocomplete="off" autofocus></textarea>
+</div>
+<ul id="feedback-list">
+    <li class="feedback-list-item" id='feedback-list-item-demo'>
+    <span class="icon-good"></span>
+    <span class="feedback-keyword">test</span>
+    <span class="feedback-message">suppose this message is raelly long and spans multiple lines. how will it end up getting displayed? i hope it doesn't wrap around all the way to the beginning.</span>
+    </li>
+</ul>
 </body>
 </html>
