@@ -3,8 +3,28 @@ $(->
     $feedback_list = $("#feedback-list")
     feedback = {
         "grocery": {
-            "keywords": ["grocery"],
+            "keywords": ["grocery", "groceries"],
             "message": "The average grocery store has a profit margin of about 1 percent.",
+        },
+        "mobile": {
+            "keywords": ["mobile"],
+            "message": "Few users are willing to pay for mobile apps. Think carefully about your revenue streams and how you will pay for rent/food. Ads and the App Store are not enough.",
+        },
+        "nfc": {
+            "keywords": ["nfc"],
+            "message": "In practice, NFC is cumbersome, and generally leads to poor user experiences.",
+        },
+        "rfid": {
+            "keywords": ["rfid"],
+            "message": "Many consumers are concerned about the privacy implications of RFID tags.",
+        },
+        "qr": {
+            "keywords": ["qr"],
+            "message": "In practice, most cell phones have poor cameras (and many lack auto-focus), which makes scanning QR codes difficult. Adoption of QR codes is low outside of Japan and select niche communities.",
+        },
+        "bitcoin": {
+            "keywords": ["bitcoin"],
+            "message": "Venture capitalists would rather invest directly in Bitcoins than in Bitcoin-related businesses.",
         },
     }
     feedback_items = {}
