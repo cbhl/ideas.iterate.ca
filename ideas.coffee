@@ -35,7 +35,7 @@ $(->
             "message": "Building a comprehensive database of 'local' destinations is difficult. Relying on a third-party database presents a business risk if (e.g. Google Maps, FourSquare) decides to shut down and/or monetize their API.",
         },
         "social": {
-            "keywords": ["social"],
+            "keywords": ["social", "share"],
             "message": "Facebook has made changes to their platform which make it very difficult to replicate the success of companies like Zynga, Twitter, or Path through organic growth.",
         },
         "meet-up": {
