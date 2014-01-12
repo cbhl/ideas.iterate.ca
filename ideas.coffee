@@ -104,7 +104,7 @@ $(->
         },
         "calendar": {
             "keywords": ["calendar", "schedule", "scheduling", "iCal", "google calendar", "alarm", "clock"],
-            "message": "There are many arcane edge cases when handling dates and times. For example, try executing <pre>cal 9 1752</pre> on a Unix/Linux system.",
+            "message": "There are many arcane edge cases when handling dates and times. For example, try executing <pre>cal 9 1752</pre> on a Unix/Linux system. Also, DST and time zones.",
         },
     }
     feedback_items = {}
