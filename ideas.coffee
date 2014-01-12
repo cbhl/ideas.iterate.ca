@@ -21,7 +21,9 @@ $(->
     on_idea_input = ->
         idea_text = $idea_textarea.val()
         check_keywords = (keywords) ->
-            return true for keyword in keywords when idea_text.indexOf(keyword) >= 0
+            if idea_text == null
+                return false
+            return true for keyword in keywords when idea_text.toLowerCase().indexOf(keyword.toLowerCase()) >= 0
             return false
         key_status = {}
         key_status[key] = check_keywords keywords for key, {keywords} of feedback
