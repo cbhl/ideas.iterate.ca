@@ -20,7 +20,7 @@
 
 .feedback-list-item {
     width: 90%;
-    /*display: none;*/
+    display: none;
 }
 
 /* credits: flat-ui (which in turn is based off of bootstrap)
@@ -55,6 +55,7 @@
     font-size: 15px;
     padding: 8px 12px;
     height: 105px;
+    resize: vertical;
     -webkit-appearance: none;
     border-radius: 6px;
     -webkit-box-shadow: none;

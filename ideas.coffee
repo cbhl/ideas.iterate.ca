@@ -63,9 +63,11 @@ $(->
 
             # TODO(cbhl): handle multiple keywords
             if idea_text.indexOf(keywords[0]) >= 0
-                $item.show()
+                # consider moving newer keywords to the top?
+                # so.. fast fade out (if already visible) -> move -> fade in
+                $item.fadeIn()
             else
-                $item.hide()
+                $item.fadeOut()
 
     $idea_textarea.autosize {append: "\n"}
     add_feedback_item key, value for key, value of feedback
