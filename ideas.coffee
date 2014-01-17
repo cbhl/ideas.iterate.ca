@@ -118,6 +118,10 @@ $(->
             "keywords": ["textbook", "textbooks"],
             "message": "Publishers often release new editions of textbooks every year in order to force students to buy the latest version of a textbook.",
         },
+        "illegal": {
+            "keywords": ["illegal", "hitmen", "murder", "fraud", "homicide"],
+            "message": "Illegal actions are generally a bad idea"
+        },
     }
     feedback_items = {}
 
