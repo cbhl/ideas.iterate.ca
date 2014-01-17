@@ -94,6 +94,10 @@ $(->
             "keywords": ["marketplace/platform", "platform", "marketplace", "exchange"],
             "message": "It is difficult to produce enough content on your site to bootstrap past the chicken-and-egg problem of not having users on both sides of your marketplace at the same time.",
         },
+        "dating": {
+            "keywords": ["dating"],
+            "message": "It is generally difficult to get girls/women to trust new sites in this category.",
+        },
         "clothing": {
             "keywords": ["clothing"],
             "message": "Clothing exchanges are very common, but users usually will not pay for them. Recognizing an item of clothing from an image is very difficult technically, if not impossible."
