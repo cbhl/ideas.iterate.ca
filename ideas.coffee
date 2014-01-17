@@ -6,6 +6,10 @@ $(->
             "keywords": ["grocery", "groceries"],
             "message": "The average grocery store has a profit margin of about 1 percent.",
         },
+        "student": {
+            "keywords": ["student", "students"],
+            "message": "The total median income for students is about $10,500. This means they probably won't have much money to pay for your service or product. Think carefully about your revenue streams and how you will pay for rent/food.",
+        },
         "mobile": {
             "keywords": ["mobile"],
             "message": "Few users are willing to pay for mobile apps. Think carefully about your revenue streams and how you will pay for rent/food. Ads and the App Store are not enough.",
