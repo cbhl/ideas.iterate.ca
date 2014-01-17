@@ -155,7 +155,7 @@ $(->
             # check if the user has entered more than 3 words:
             idea_text = idea_text.trim().replace(/\s+/g, " ");    #remove extra spaces
             if idea_text.split(" ").length > 3
-                $feedback_list_status.html('Your idea does not look "obviously bad" to us. Maybe you should go talk to some potential customers! If you think this is a mistake, please email me at <a href="mailto:ideas@iterate.ca">ideas@iterate.ca</a> or <a href="https://github.com/cbhl/ideas.iterate.ca">submit a pull request</a>.')
+                $feedback_list_status.html('Your idea does not look "obviously bad" to us. Maybe you should go talk to some potential customers! If you think this is a mistake, please email me at <a href="mailto:ideas@azuresky.ca">ideas@azuresky.ca</a> or <a href="https://github.com/cbhl/ideas.iterate.ca">submit a pull request</a>.')
             else 
                 $feedback_list_status.html('Please use more than three words to describe your idea, and we will tell you if it is "obviously bad".')
         else if visible_item_count == 1
