@@ -91,7 +91,7 @@ $(->
             "message": "High capital costs. Long turnaround to get prototypes from manufacturers in China.",
         },
         "platform": {
-            "keywords": ["marketplace/platform", "platform", "marketplace"],
+            "keywords": ["marketplace/platform", "platform", "marketplace", "exchange"],
             "message": "It is difficult to produce enough content on your site to bootstrap past the chicken-and-egg problem of not having users on both sides of your marketplace at the same time.",
         },
         "clothing": {
@@ -109,6 +109,10 @@ $(->
         "calendar": {
             "keywords": ["calendar", "schedule", "scheduling", "iCal", "google calendar", "alarm", "clock"],
             "message": "There are many arcane edge cases when handling dates and times. For example, try executing <pre>cal 9 1752</pre> on a Unix/Linux system. Also, DST and time zones.",
+        },
+        "textbook": {
+            "keywords": ["textbook", "textbooks"],
+            "message": "Publishers often release new editions of textbooks every year in order to force students to buy the latest version of a textbook.",
         },
     }
     feedback_items = {}
