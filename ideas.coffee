@@ -122,6 +122,10 @@ $(->
             "keywords": ["illegal", "hitmen", "murder", "fraud", "homicide"],
             "message": "Illegal actions are generally a bad idea"
         },
+        "search-engine": {
+            "keywords": ["search engine", "search", "google"],
+            "message": "Building a good search engine (beyond what out of the box solutions already provide) is extremely hard.",
+        },
     }
     feedback_items = {}
 
